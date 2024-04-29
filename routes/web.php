@@ -1,7 +1,8 @@
 <?php
 
-use App\Http\Controllers\PruebaController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\PruebaController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -14,4 +15,4 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::post('/', [ PruebaController::class, 'index']);
+Route::get('/', [ PruebaController::class, 'index']);

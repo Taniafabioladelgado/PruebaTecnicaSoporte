@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+<html lang="en">
 
 <head>
     <meta charset="utf-8">
@@ -10,17 +10,13 @@
 </head>
 
 <body class="invisible">
-    <h1>Nombre: {{ $aplicante['nombre'] }}</h1>
-    @if ($aplicante->aprobado)
+    <h1>Nombre: {{$aplicante['nombre']}} </h1>
+    @if ($aplicante['aprobado']==true)
         <h2>APROBADO</h1>
         @else
             <h2>REPROBADO</h1>
     @endif
-</body>
+</body> 
 
 </html>
-<style>
-    .invisible {
-        display: none;
-    }
-</style>
+
